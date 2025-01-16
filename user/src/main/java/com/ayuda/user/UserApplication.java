@@ -1,4 +1,5 @@
-package com.ayuda.accounts;
+package com.ayuda.user;
+
 
 import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -7,8 +8,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.info.License;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
 
 @SpringBootApplication
 
@@ -16,8 +16,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 //@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @OpenAPIDefinition(
 		info = @Info(
-				title = "Accounts microservice REST API Documentation",
-				description = "Ayuda Accounts microservice REST API Documentation",
+				title = "User microservice REST API Documentation",
+				description = "Ayuda user microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
 						name = "Adetifa Bolu",
@@ -29,13 +29,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				)
 		),
 		externalDocs = @ExternalDocumentation(
-				description =  "Ayuda Accounts microservice REST API Documentation"
+				description =  "Ayuda user microservice REST API Documentation"
 		)
 )
-public class AccountsApplication {
+public class UserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccountsApplication.class, args);
+		SpringApplication.run(UserApplication.class, args);
 	}
 
 }

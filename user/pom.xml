@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ayuda</groupId>
-	<artifactId>accounts</artifactId>
+	<artifactId>user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>accounts</name>
-	<description>Account Service</description>
+	<name>user</name>
+	<description>User Service</description>
 	<url/>
 	<licenses>
 		<license/>

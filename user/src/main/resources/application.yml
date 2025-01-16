@@ -5,7 +5,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ayuda-account-service-backend-db
+    url: jdbc:postgresql://localhost:5432/ayuda-user-service-backend-db
     username: postgres
     password: postgres13240!
     driver-class-name: org.postgresql.Driver
