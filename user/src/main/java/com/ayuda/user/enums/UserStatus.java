@@ -1,6 +1,6 @@
 package com.ayuda.user.enums;
 
-public enum AccountStatus {
+public enum UserStatus {
     ACTIVE,
     INACTIVE,
     SUSPENDED,

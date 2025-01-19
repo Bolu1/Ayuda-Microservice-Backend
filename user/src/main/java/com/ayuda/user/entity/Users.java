@@ -1,16 +1,15 @@
 package com.ayuda.user.entity;
 
-import com.ayuda.user.enums.AccountStatus;
+import com.ayuda.user.enums.UserStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Data
-@Builder
 @Entity
-@Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
 @Table(name = "users")
+@AllArgsConstructor @NoArgsConstructor
 public class Users extends BaseEntity{
 
     @Id
@@ -49,5 +48,5 @@ public class Users extends BaseEntity{
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
-    private AccountStatus status;
+    private UserStatus status;
 }

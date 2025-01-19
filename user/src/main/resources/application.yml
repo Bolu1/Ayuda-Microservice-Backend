@@ -2,21 +2,29 @@ server:
   port: 8080
   error:
     include-message: always
-
 spring:
+  application:
+    name: "users"
   datasource:
     url: jdbc:postgresql://localhost:5432/ayuda-user-service-backend-db
-    username: postgres
-    password: postgres13240!
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
     show-sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  config:
+    import: "configserver:http://localhost:8071/"
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
   main:
     web-application-type: servlet
