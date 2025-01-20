@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/authenticationservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/configserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transactionservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/userservice/src/main/java" charset="UTF-8" />
   </component>
 </project>

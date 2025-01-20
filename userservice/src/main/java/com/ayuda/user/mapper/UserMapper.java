@@ -1,6 +1,7 @@
 package com.ayuda.user.mapper;
 
 import com.ayuda.user.dto.CreateUserAccountDto;
+import com.ayuda.user.dto.SanitizedUserDto;
 import com.ayuda.user.dto.UpdateUserAccountDto;
 import com.ayuda.user.dto.UserDto;
 import com.ayuda.user.entity.Users;
@@ -74,5 +75,19 @@ public class UserMapper {
             user.setPassword(updateAccountDto.getPassword());
         }
         return user;
+    }
+
+    public static SanitizedUserDto mapToSanitizedDto(UserDto userDto) {
+        return new SanitizedUserDto(
+                userDto.getId(),
+                userDto.getEmail(),
+                userDto.getFirstName(),
+                userDto.getLastName(),
+                userDto.getPhoneNumber(),
+                userDto.getProfileImageUrl(),
+                userDto.isEmailVerified(),
+                userDto.isPhoneVerified(),
+                userDto.getStatus()
+        );
     }
 }
