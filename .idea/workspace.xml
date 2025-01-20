@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="821f5df4-94fd-4b53-a4f6-b033e36082c6" name="Changes" comment="feat(auth): setup authentication service">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/com/ayuda/authenticationservice/dto/SanitizedUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authenticationservice/src/main/java/com/ayuda/authenticationservice/mapper/UserDtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ayuda/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ayuda/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ayuda/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="821f5df4-94fd-4b53-a4f6-b033e36082c6" name="Changes" comment="feat(app): create read me file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737331328531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(auth): setup authentication service">
+      <option name="closed" value="true" />
+      <created>1737331495954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737331495954</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(app): create read me file">
+      <option name="closed" value="true" />
+      <created>1737332046031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737332046031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +220,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat(user): setup user service" />
     <MESSAGE value="feat(auth): setup authentication service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(auth): setup authentication service" />
+    <MESSAGE value="feat(app): create read me file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(app): create read me file" />
   </component>
 </project>

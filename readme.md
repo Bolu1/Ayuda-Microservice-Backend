@@ -1,7 +1,3 @@
-Here's your **updated README** for **Ayuda**, incorporating all your requirements and removing the unnecessary sections. 🚀
-
----
-
 # **Ayuda - Digital Wallet for FIAT & Crypto**
 🚀 *Work in Progress*
 
@@ -209,7 +205,3 @@ For any issues, feel free to open a GitHub **Issue** or reach out:
 
 ## **📜 License**
 This project is licensed under the **MIT License**.
-
----
-
-### **✅ This README is now aligned with your project setup! Let me know if you need any further modifications. 🚀🔥**
