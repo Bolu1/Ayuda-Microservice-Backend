@@ -76,6 +76,16 @@ public class UserServiceImpl implements IUserService {
     }
 
     /**
+     * @param email
+     * @return
+     */
+    @Override
+    public UserDto readUserByEmail(String email) {
+        Users userFromDB = userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException("User", "email", email));
+        return UserMapper.mapToDto(userFromDB, new UserDto());
+    }
+
+    /**
      * @param userId
      * @param updateUserAccountDto
      * @param imageUrl

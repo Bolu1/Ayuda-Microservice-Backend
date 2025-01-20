@@ -32,6 +32,13 @@ public interface IUserService {
 
     /**
      *
+     * @param email
+     * @return
+     */
+    UserDto readUserByEmail (String email);
+
+    /**
+     *
      * @param userId
      * @param updateUserAccountDto
      * @param imageUrl

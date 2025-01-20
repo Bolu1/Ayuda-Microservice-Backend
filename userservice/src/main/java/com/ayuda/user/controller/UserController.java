@@ -109,6 +109,25 @@ public class UserController {
                     content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     })
+    @GetMapping("/fetch/email/{email}")
+    public ResponseEntity<ResponseDto<UserDto>> fetchUserByEmail(@PathVariable("email") String email) {
+        UserDto userFromDB = iUserService.readUserByEmail(email);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(new ResponseDto<>(UsersConstants.STATUS_200, UsersConstants.MESSAGE_200, Optional.of(userFromDB)));
+    }
+
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "User fetched successfully"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "Internal Server Error",
+                    content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+            )
+    })
     @GetMapping("/{id}")
     public ResponseEntity<ResponseDto<UserDto>> fetchUserById(@PathVariable("id") String userId) {
         UserDto userFromDB = iUserService.readUserById(userId);
