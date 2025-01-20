@@ -12,6 +12,7 @@ public class UserMapper {
     public static UserDto mapToDto(Users user, UserDto userDto) {
         userDto.setId(user.getId());
         userDto.setEmail(user.getEmail());
+        userDto.setPassword(user.getPassword());
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
         userDto.setPhoneNumber(user.getPhoneNumber());
@@ -29,6 +30,7 @@ public class UserMapper {
     public static Users mapFromDto(UserDto userDto, Users user) {
         user.setId(userDto.getId());
         user.setEmail(userDto.getEmail());
+        user.setPassword(userDto.getPassword());
         user.setFirstName(userDto.getFirstName());
         user.setLastName(userDto.getLastName());
         user.setPhoneNumber(userDto.getPhoneNumber());
@@ -44,6 +46,7 @@ public class UserMapper {
 
     public static Users mapFromCreateUserAccountDto(CreateUserAccountDto createAccountDto, Users user) {
         user.setEmail(createAccountDto.getEmail());
+        user.setPassword(createAccountDto.getPassword());
         user.setFirstName(createAccountDto.getFirstName());
         user.setLastName(createAccountDto.getLastName());
         user.setPhoneNumber(createAccountDto.getPhoneNumber());
@@ -66,6 +69,9 @@ public class UserMapper {
         }
         if (updateAccountDto.getPhoneNumber() != null) {
             user.setPhoneNumber(updateAccountDto.getPhoneNumber());
+        }
+        if (updateAccountDto.getPassword() != null) {
+            user.setPassword(updateAccountDto.getPassword());
         }
         return user;
     }

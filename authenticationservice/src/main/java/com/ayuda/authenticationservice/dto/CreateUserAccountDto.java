@@ -1,13 +1,15 @@
-package com.ayuda.user.dto;
+package com.ayuda.authenticationservice.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Schema(
-        name = "CreateAccountDto",
+        name = "CreateUserAccountDto",
         description = "Schema for user account creation"
 )
 @AllArgsConstructor @NoArgsConstructor
@@ -16,6 +18,10 @@ public class CreateUserAccountDto {
     @Email(message = "Invalid email format")
     @Schema(description = "User email", example = "user@example.com")
     private String email;
+
+    @NotEmpty(message = "Password cannot be null or empty")
+    @Schema(description = "User password", example = "password1234")
+    private String password;
 
     @NotEmpty(message = "First name cannot be null or empty")
     @Schema(description = "User first name", example = "John")
