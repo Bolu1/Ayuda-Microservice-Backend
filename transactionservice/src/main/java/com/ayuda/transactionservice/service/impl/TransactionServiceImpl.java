@@ -1,6 +1,6 @@
 package com.ayuda.transactionservice.service.impl;
 
-import com.ayuda.transactionservice.TransactionRepository;
+import com.ayuda.transactionservice.repository.TransactionRepository;
 import com.ayuda.transactionservice.dto.CreateTransactionDto;
 import com.ayuda.transactionservice.dto.TransactionDto;
 import com.ayuda.transactionservice.entity.Transaction;
@@ -15,8 +15,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
 
 @Service
 @AllArgsConstructor

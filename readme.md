@@ -61,11 +61,11 @@ Ayuda is a **modern digital wallet** that enables users to securely store, trans
 - [x] Profile management
 - [x] Role-based access control
 
-#### **5. Wallet Service** ⏳
-- [ ] Create, update, delete wallets
-- [ ] Manage both FIAT and Solana wallets
-- [ ] Track wallet balances & transactions
-- [ ] Fund and withdraw money
+#### **5. Wallet Service** ✅
+- [x] Create, update, delete wallets
+- [x] Manage both FIAT and Solana wallets
+- [x] Track wallet balances & transactions
+- [x] Fund and withdraw money
 
 #### **6. Transaction Service** ✅
 - [x] Peer-to-peer transactions (Internal users)

@@ -1,4 +1,4 @@
-package com.ayuda.transactionservice;
+package com.ayuda.transactionservice.repository;
 
 import com.ayuda.transactionservice.entity.Transaction;
 import org.springframework.data.domain.Page;

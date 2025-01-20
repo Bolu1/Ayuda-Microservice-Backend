@@ -4,44 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="821f5df4-94fd-4b53-a4f6-b033e36082c6" name="Changes" comment="feat(app): create read me file">
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/transactionservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/TransactionserviceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/constants/TransactionConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/cotroller/TransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/dto/CreateTransactionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/dto/TransactionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/entity/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/enums/TransactionDestination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/enums/TransactionLedgerEntryType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/enums/TransactionSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/enums/TransactionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/enums/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/exception/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/mapper/TransactionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/service/ITransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/service/impl/TransactionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/utils/helpers/ReferenceGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/test/java/com/ayuda/transactionservice/TransactionserviceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/dto/SanitizedUserDto.java" afterDir="false" />
+    <list default="true" id="821f5df4-94fd-4b53-a4f6-b033e36082c6" name="Changes" comment="feat(docs): update transaction service milestones">
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/walletservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/WalletserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/constants/WalletConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/controller/WalletController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/dto/CreateWalletDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/dto/WalletDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/entity/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/enums/WalletStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/enums/WalletType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/mapper/WalletMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/repository/WalletRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/service/IWalletService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/service/impl/WalletServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice/utils/helpers/AccountNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walletservice/src/test/java/com/ayuda/walletservice/WalletserviceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/ayuda/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/service/impl/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice/service/impl/TransactionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,17 +90,19 @@
     "Application.EurekaserviceApplication.executor": "Debug",
     "Application.TransactionserviceApplication.executor": "Debug",
     "Application.UserApplication.executor": "Debug",
+    "Application.WalletserviceApplication.executor": "Debug",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/macbook/Projects/Private/Ayuda-Microservice-Backend/transactionservice/src/main/java/com/ayuda/transactionservice",
+    "last_opened_file_path": "/Users/macbook/Projects/Private/Ayuda-Microservice-Backend/walletservice/src/main/java/com/ayuda/walletservice",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/walletservice/src/main/java/com/ayuda/walletservice" />
       <recent name="$PROJECT_DIR$/transactionservice/src/main/java/com/ayuda/transactionservice" />
       <recent name="$PROJECT_DIR$/authenticationservice/src/main/java/com/ayuda/authenticationservice" />
     </key>
@@ -117,7 +116,7 @@
       <recent name="com.ayuda.authenticationservice.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TransactionserviceApplication">
+  <component name="RunManager" selected="Application.WalletserviceApplication">
     <configuration name="AuthenticationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="JWT_SECRET" value="404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970" />
@@ -162,9 +161,6 @@
     </configuration>
     <configuration name="TransactionserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="CLOUDINARY_API_KEY" value="334475779789339" />
-        <env name="CLOUDINARY_API_SECRET" value="GXbq6Kz6-0uIfygZyXYctJazELc" />
-        <env name="CLOUDINARY_CLOUD_NAME" value="dizurs95a" />
         <env name="SPRING_DATASOURCE_PASSWORD" value="postgres13240!" />
         <env name="SPRING_DATASOURCE_USERNAME" value="postgres" />
       </envs>
@@ -172,7 +168,7 @@
       <module name="transactionservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ayuda.transactionservice.*" />
+          <option name="PATTERN" value="com.ayuda.transactionservice.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,6 +189,23 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ayuda.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletserviceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_DATASOURCE_PASSWORD" value="postgres13240!" />
+        <env name="SPRING_DATASOURCE_USERNAME" value="postgres" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.ayuda.walletservice.WalletserviceApplication" />
+      <module name="walletservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ayuda.walletservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -259,7 +272,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737332101123</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(transaction): create transaction service">
+      <option name="closed" value="true" />
+      <created>1737391599701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737391599702</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(docs): update transaction service milestones">
+      <option name="closed" value="true" />
+      <created>1737391794957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737391794957</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,6 +307,8 @@
     <MESSAGE value="feat(user): setup user service" />
     <MESSAGE value="feat(auth): setup authentication service" />
     <MESSAGE value="feat(app): create read me file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(app): create read me file" />
+    <MESSAGE value="feat(transaction): create transaction service" />
+    <MESSAGE value="feat(docs): update transaction service milestones" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(docs): update transaction service milestones" />
   </component>
 </project>
