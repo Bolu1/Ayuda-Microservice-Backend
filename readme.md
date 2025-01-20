@@ -67,15 +67,15 @@ Ayuda is a **modern digital wallet** that enables users to securely store, trans
 - [ ] Track wallet balances & transactions
 - [ ] Fund and withdraw money
 
-#### **6. Transaction Service** ⏳
-- [ ] Peer-to-peer transactions (Internal users)
-- [ ] Withdraw funds to external bank accounts or crypto wallets
-- [ ] Process payment webhooks
-- [ ] Transaction history & reconciliation
+#### **6. Transaction Service** ✅
+- [x] Peer-to-peer transactions (Internal users)
+- [x] Withdraw funds to external bank accounts or crypto wallets
+- [x] Transaction history & reconciliation
 
 #### **7. Payment Service** ⏳
 - [ ] Process FIAT payments
 - [ ] Handle refunds and chargebacks
+- [ ] Process payment webhooks
 - [ ] Payment authorization and settlement
 
 #### **8. Card Service** ⏳
