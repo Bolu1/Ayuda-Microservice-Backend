@@ -41,11 +41,11 @@ Ayuda is a **modern digital wallet** that enables users to securely store, trans
 
 ✅ - Completed | 🚧 - In Progress | ⏳ - Pending
 
-#### **1. API Gateway** 🚧
-- [ ] Route requests to appropriate microservices
-- [ ] Implement authentication & authorization (JWT/OAuth2)
-- [ ] Load balancing with service discovery
-- [ ] Logging and monitoring
+#### **1. API Gateway** ✅
+- [x] Route requests to appropriate microservices
+- [x] Implement authentication & authorization (JWT/OAuth2)
+- [x] Load balancing with service discovery
+- [x] Logging and monitoring
 
 #### **2. Service Discovery** ✅
 - [x] Register and discover microservices
@@ -72,11 +72,11 @@ Ayuda is a **modern digital wallet** that enables users to securely store, trans
 - [x] Withdraw funds to external bank accounts or crypto wallets
 - [x] Transaction history & reconciliation
 
-#### **7. Payment Service** ⏳
-- [ ] Process FIAT payments
-- [ ] Handle refunds and chargebacks
-- [ ] Process payment webhooks
-- [ ] Payment authorization and settlement
+#### **7. Payment Service** ✅
+- [x] Process FIAT payments
+- [x] Handle refunds and chargebacks
+- [x] Process payment webhooks
+- [x] Payment authorization and settlement
 
 #### **8. Card Service** ⏳
 - [ ] Create virtual cards linked to wallets
@@ -86,7 +86,7 @@ Ayuda is a **modern digital wallet** that enables users to securely store, trans
 - [ ] Freeze, unfreeze, and delete cards
 - [ ] Secure PIN management
 
-#### **9. Web3 Service (Rust)** ⏳
+#### **9. Web3 Service (Rust)** 🚧
 - [ ] Generate Solana wallet addresses
 - [ ] Process token purchases using FIAT
 - [ ] Synchronize Solana balances with Wallet Service
