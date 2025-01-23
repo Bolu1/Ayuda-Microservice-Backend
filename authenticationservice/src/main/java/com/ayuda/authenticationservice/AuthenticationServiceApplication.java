@@ -12,8 +12,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients
-//@EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
-//@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Authentication microservice REST API Documentation",

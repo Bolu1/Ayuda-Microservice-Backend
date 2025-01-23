@@ -1,0 +1,12 @@
+server:
+  port: 8076
+jwt:
+  secret: ${JWT_SECRET}
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/"

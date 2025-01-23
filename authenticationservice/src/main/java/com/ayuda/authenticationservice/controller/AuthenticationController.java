@@ -96,7 +96,7 @@ public class AuthenticationController {
         UserSigninResponseDto userSigninResponseDto = new UserSigninResponseDto(UserDtoMapper.mapToSanitizedDto(userFromDb), authenticationToken);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(new ResponseDto<>(AuthenticationConstants.MESSAGE_200, AuthenticationConstants.MESSAGE_200, Optional.of(userSigninResponseDto)));
+                .body(new ResponseDto<>(AuthenticationConstants.STATUS_200, AuthenticationConstants.MESSAGE_200, Optional.of(userSigninResponseDto)));
     }
 
 }

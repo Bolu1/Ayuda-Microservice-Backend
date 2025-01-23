@@ -1,0 +1,43 @@
+server:
+  port: 8075
+  error:
+    include-message: always
+spring:
+  application:
+    name: "paymentservice"
+  config:
+    import: "configserver:http://localhost:8071/"
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+  main:
+    web-application-type: servlet
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "paymentservice"
+    description: "Ayuda Payment Service Application"
+    version: "0.0.1"

@@ -147,25 +147,37 @@ public class UserController {
                     content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     })
-    @PatchMapping(value="/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PatchMapping(value = "", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<ResponseDto<UserDto>> updateUserAccount(
-            @PathVariable("id") String userId,
+            @RequestHeader(value = "x-user-id", required = true) String userId,
             @RequestParam(value = "firstName", required = false) String firstName,
             @RequestParam(value = "lastName", required = false) String lastName,
             @RequestParam(value = "phoneNumber", required = false) String phoneNumber,
             @RequestPart(value = "file", required = false) MultipartFile file) throws IOException {
 
+        logger.info("Updating account for user ID: {}", userId);
+
+        // Validate that we received a user ID
+        if (userId == null || userId.isEmpty()) {
+            return ResponseEntity
+                    .status(HttpStatus.UNAUTHORIZED)
+                    .body(new ResponseDto<>(UsersConstants.STATUS_401, "Unauthorized: Missing User ID", Optional.empty()));
+        }
+
+        // Upload image if provided
         String imageUrl = null;
         if (file != null && !file.isEmpty()) {
             imageUrl = cloudinaryService.uploadFile(file);
         }
 
+        // Prepare DTO
         UpdateUserAccountDto updateUserAccountDto = UpdateUserAccountDto.builder()
                 .firstName(firstName)
                 .lastName(lastName)
                 .phoneNumber(phoneNumber)
                 .build();
 
+        // Call the service to update the user
         UserDto updatedUser = iUserService.updateUserById(userId, updateUserAccountDto, imageUrl);
 
         return ResponseEntity

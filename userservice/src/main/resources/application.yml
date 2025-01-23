@@ -55,3 +55,11 @@ info:
     name: "userservice"
     description: "Ayuda User Service Application"
     version: "0.0.1"
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000

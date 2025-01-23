@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="apigateway" />
         <module name="configserver" />
         <module name="eurekaservice" />
       </profile>
@@ -19,40 +20,27 @@
         </processorPath>
         <module name="userservice" />
       </profile>
-      <profile name="Annotation profile for authenticationservice" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-        </processorPath>
-        <module name="authenticationservice" />
-      </profile>
-      <profile name="Annotation profile for transactionservice" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-        </processorPath>
-        <module name="transactionservice" />
-      </profile>
       <profile name="Annotation profile for walletservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="transactionservice" />
+        <module name="authenticationservice" />
+        <module name="paymentservice" />
         <module name="walletservice" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apigateway" options="-parameters" />
       <module name="authenticationservice" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="eurekaservice" options="-parameters" />
+      <module name="paymentservice" options="-parameters" />
       <module name="transactionservice" options="-parameters" />
       <module name="userservice" options="-parameters" />
       <module name="walletservice" options="-parameters" />
